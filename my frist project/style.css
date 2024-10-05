@@ -1,0 +1,473 @@
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #eaf1f1;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color:rgb(165, 145, 184);
+    height: 100vh;
+}
+
+
+/* header part */
+
+
+.header-background {
+    background-color:rgb(165, 145, 184);
+   
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    font-size: 1.2rem;
+}
+.header-content{display: flex;
+    
+align-items: center;
+justify-content: space-around;}
+
+.header-content img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.header-content h1, .header-content p { padding-left: 38px;
+    margin-top: 2rem 0;
+    font-family: 'Unica One', cursive;
+
+}
+
+/* about */ 
+
+#about{ width: 80vw;
+    
+   
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    
+    justify-content: center;}
+    
+   #about h2{  font-family: 'Unica One', cursive;
+    font-size: 3rem;
+    padding: 10px 0;
+    text-align: center;
+    }
+   #about p{ padding: 10px 15px;
+    font-size: 1.1rem;}
+   
+    
+    /* educational part */
+
+    #educational{ width: 80vw;
+        margin: 0 auto;
+        margin-top: 2rem;
+        }
+        
+        
+        #educational .title{ text-align: center;
+        padding: 5rem 0;
+        font-family: 'Unica One', cursive;
+        font-size: 3rem;
+        
+        }
+        
+        .educational-list{ display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+        height: 4rem;
+        column-gap: 50px;
+        
+        }
+        
+        .educational-duration-container{
+            
+            margin: 0 auto;
+        }
+        
+        .educational-duration{ width: 20vw;
+        background-color: black;
+        text-align: center;
+        align-content: center;
+        color: #ebe5e5;
+        border-radius: 50px;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        font-family: "Arial",Helvetica;}
+        
+        .educational-description{ 
+            width: 30vw;
+            height: 6vh;
+            background-color: #0e0f0f;
+            border-radius: 50px;
+            text-align: center;
+            margin-left: 30px;
+        }
+          
+        
+        
+        
+        .Inistuite-name{  color: #ebe5e5;
+        font-size: 1.2rem;}
+
+        .position{ color: #a7a4a4;
+        padding-bottom: 2px ;
+        font-size: 14px;}
+        
+        .picture{ width: 80vw;
+           padding-top: 5rem;
+            margin: 0 auto;
+            text-align: center;
+            border: none;
+            outline: none;
+           margin-right: 10px;
+            }
+
+ /* educational part */
+
+/* skills part */
+
+            #skills h2{ text-align: center;
+                padding-top: 2rem;
+                font-size: 3rem;
+                font-family: 'Unica One', cursive;}
+                
+                .sub-container{display: flex;
+                justify-content: space-around;
+                margin: 0 auto;
+                margin-top: 3rem;
+                font-family: Arial, Helvetica;
+               
+                width: 90vw;
+                gap: 20px;}
+                
+                .skills-container{ display: flex;
+                justify-content: space-between;
+                padding-bottom: 1rem;}
+                
+                .progress{ width: 30vw;
+                    accent-color: #0fca1f;
+                }
+                .progress::-webkit-progress-value {
+                    background-color: rgb(40, 114, 53);
+                }
+                
+/* skills part */
+
+
+/* portfolio */
+
+#portfolio{ margin-top: 1.5rem;}
+            #portfolio h2{ font-family: 'Unica One', cursive;
+                font-size: 3rem;
+                
+                text-align: center;}
+            
+            .sub-section{ 
+                width: 75vw;
+           
+               margin: 0 auto;
+                display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            
+            }
+            /*.sub-section2{ 
+                width: 80vw;
+                height: 30vh;
+               margin: 0 auto;
+                display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 10px;
+            
+            }*/
+            
+            
+            .project{ 
+                width: 50vw;
+               box-shadow: 0px 5px 3px;
+                background-color: aqua;
+                height: 20rem;
+            }
+            .header{ width: 100%;
+                height: 60%;
+            }
+            
+            .bootom{ height: 40%;
+            background-color: rgba(14, 14, 109, 0.452);
+            text-align: center;
+            align-content: center;
+        margin-bottom: 10px;}
+            
+            .bootm a{ text-decoration: none;
+            }
+             .bootom h5{ font-size: 1.2rem;}
+            .bootom h4{ 
+                color: black;}
+             .bootom   h4:hover{ text-decoration: underline;
+                color: rgb(236, 236, 241);}
+
+
+/* portfolio */
+
+
+/* contact */
+
+.fa-brands{ color: hsl(257, 26%, 95%);
+    padding-top: 5px;
+    letter-spacing: 15px;
+font-size: 30px;}
+
+.G-mail{ padding-top: 5px;
+letter-spacing: 1px;}
+
+.G-mail span{ font-size: 30px;
+}
+
+footer p{ letter-spacing: 3px;}
+
+/* Additional Styles */
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #17e998;
+   
+    
+}
+
+.td-btn:hover{
+   
+cursor: pointer;}
+
+
+
+
+
+
+
+.subtitle{ color: #fff;
+}
+.subtitle-1{ color: #fff;
+    
+}
+
+.subtitle-container{text-align: center;}
+
+
+#contact { background-color: #333;
+   
+    color:#fff;
+      border-radius: 0.5%;
+      align-items: center;
+  }
+  
+  .subtitle{ font-size: 3rem;}
+
+.contact-info-container{
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-left: 0px;
+}
+
+.contact-info-container a, 
+.contact-info-container p {
+    text-decoration: none;
+    font-size: 18px;
+}
+.sub-contact{ text-align: center;}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    
+}
+
+.input-field{
+    background-color: transparent;
+    border: 2px solid #555;
+    border-radius: 2px;
+    width: 90%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.contact-button{
+    border: 2px solid #3b82f6;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-left: 5.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-button:hover{
+    background-color: #3b82f6;
+    cursor: pointer;
+}
+
+
+/* contact part*/
+
+/* footer part*/
+
+footer{  width: 100%;
+    text-align: center;
+   }
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 0.5rem;
+    border-top: 1px solid #cac6c6;
+    
+   
+   
+}
+
+.footer-link, 
+footer span{
+    color: #d5d5d5;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+/* responsive design*/
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+
+    #educational .title,#skills h2, #about h2,#portfolio h2 { font-size: 2rem;}
+
+    .educational-description{ width: 40vw;}
+    .educational-duration{ width: 30vw;}
+
+    .header-content{ display: block;
+   align-items: center;
+padding-top: 10.5rem;}
+
+
+.project{ box-shadow: none;}
+
+.bootom h5{ 
+    font-size:17px;}
+
+.subtitle-1{ margin-left: 7rem;}
+
+.contact-info-container{display: block;}
+
+
+
+form{ display: block;
+width: 100vw;
+margin-left: 1rem;}
+
+.contact-button{ margin-left: 14rem;}
+
+}
+
+@media (max-width: 600px){
+
+    .contact-button{ margin-left:8rem;}
+
+    .educational-list{ column-gap: 50px;}
+
+    .educational-duration-container{height: 2vh;
+    }
+    .educational-duration{font-size: 18px;
+    width: 40vw;}
+
+    .Inistuite-name .position{ font-size:2px;}
+
+    .educational-description{ width: 55vw;
+        height: 8vh;
+        margin-top: 40px;
+      
+    
+}
+
+}
